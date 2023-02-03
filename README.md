@@ -1,6 +1,8 @@
 # bsp-future-urban-growth
 
-Future Urban Growth (Isobenefit Cities)
+This is an evolution of the ideas first explored with the [Future Urban Growth](https://github.com/UCL/BSP-future-urban-growth) project.
+
+This version uses a hybridised road network distance and raster state and depends on [cityseer](https://github.com/benchmark-urbanism/cityseer-api/). 
 
 ## Installation
 
