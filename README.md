@@ -2,7 +2,24 @@
 
 This is an evolution of the ideas first explored with the [Future Urban Growth](https://github.com/UCL/BSP-future-urban-growth) project.
 
-This version uses a hybridised road network distance and raster state and depends on [cityseer](https://github.com/benchmark-urbanism/cityseer-api/). 
+This version uses a hybridised road network distance and raster state and depends on [cityseer](https://github.com/benchmark-urbanism/cityseer-api/).
+
+## Concept
+
+1. Preparation:
+
+- Add road network to inputs - this should be a skeleton network - not collector roads
+- Decompose network to e.g. 50m
+- Compute density access and centres access from each node
+- Prepare rasters - including green access and green / urban itx
+
+2. Iters:
+
+- Cell's access to centres is based on nearest node's access + linear distance to that node
+- Review itx locations for best ratio of centres / densities (or simply centres?)
+- Add new built areas
+- Look for areas with highest density / centres ratio along roads (road itx?)
+- Add new centres adjacent to roads
 
 ## Installation
 
